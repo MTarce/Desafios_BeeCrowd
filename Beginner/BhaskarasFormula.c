@@ -20,12 +20,7 @@ int main()
     {
         printf("R1 = %.5lf\n",R1);
         printf("R2 = %.5lf\n",R2);
-    }
-    
-
-    
-
-    
+    }    
 
     return 0;
 }
