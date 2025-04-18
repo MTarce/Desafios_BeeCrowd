@@ -1,0 +1,11 @@
+
+LEITURA DE SEQUENCIA DE CARACTERES
+
+#include <string.h>
+
+
+fgets(var, sizeof(var),stdin);
+var[strscpn(dia,"\n")] = '\0';
+
+
+
