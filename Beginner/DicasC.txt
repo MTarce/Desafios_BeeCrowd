@@ -8,4 +8,27 @@ fgets(var, sizeof(var),stdin);
 var[strscpn(dia,"\n")] = '\0';
 
 
+EXTRAIR VALORES E PALAVRA DE UM string
 
+fgets(dia,sizeof(dia),stdin);
+
+    sscanf(dia,"Dia %d",&ndia);
+
+    printf("%d",ndia);
+
+EXTRAIR UM NUMERO DE QUALQUER POSIÇÃO DA string
+
+char texto[] = "Hoje é dia 5";  // A string com o número em qualquer parte
+    int dia;
+
+    // Tenta procurar e ler o número na string, independente da posição
+    if (sscanf(texto, "%*[^0-9]%d", &dia) == 1) {
+        printf("O dia é: %d\n", dia);
+    } else {
+        printf("Não foi possível encontrar um número.\n");
+    }
+
+%*[^0-9]: Esse formato ignora todos os caracteres que não são números
+(a parte [^0-9] significa "qualquer coisa que não seja de 0 a 9") e o * diz para ignorá-los.
+
+%d: Depois disso, ele lê o primeiro número que encontrar e o armazena em dia.
