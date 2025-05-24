@@ -15,8 +15,8 @@ int main()
             if (count == 2)
             {
                 printf("media = %.2f\n", sum / 2);
-                break;
-            }
+            }  
+
         }
         else
         {
