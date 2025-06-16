@@ -7,7 +7,7 @@ int main()
     for (int i = 0; i < 10; i++)
     {
         scanf("%d",&x[i]);
-        if((x[i] == NULL) | (x[i] < 0) )
+        if((x[i] == 0) || (x[i] < 0) )
         {
             x[i] = 1;
         }
