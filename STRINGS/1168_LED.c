@@ -61,3 +61,15 @@ int main(){
 
     return 0;
 }
+
+
+/*Alternativa com ponteiros*/
+
+/*=============================
+char *p = v;
+
+while (*p != '\0') {
+    if (*p == '5') break;
+    p++;
+}
+================================*/
